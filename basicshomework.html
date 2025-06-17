@@ -1,0 +1,118 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdTech</title>
+    <style>
+            body {
+              background: #f9f7fe;
+            h1 {
+              color: #a678f4;
+              text-align: center;
+              font-family: Baloo 2, cursive;
+              font-size: 48px;
+            }
+            h2 {
+              text-align: center;
+              font-family: Quicksand, sans-serif;
+              font-size: 18px;
+              border: 1px solid #a678f4;
+              padding: 10px;
+              border-radius: 11px;
+            }
+            .container {
+              max-width: 600px;
+              margin: 0 auto;
+              padding: 15px 60px;
+            }
+            img {
+              display: block;
+              margin: 0 auto;
+              border-radius: 10px;
+              max-width: 90%;
+              max-height: 400px
+            }
+            img:hover {
+              transition: all 200ms ease-in-out;
+            }
+            p {
+              line-height: 1.5;
+              font-size: 15px;
+              margin: 20px 0 10px;
+              font-family: Montserrat, sans-serif;
+            }
+            p {
+              display: block;
+              padding-top: 10px;
+              text-decoration: none;
+            }
+      button {
+        display: block;
+        margin: 20px auto;
+        color: black;
+        background: #a678f4;             /* Default text color */        /* Default background color */
+        text-align: center;
+        border: none;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        color: black;
+      }
+
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        transition: all 200ms ease-in-out;
+        background: #a678f4;  /* Change to a hover background color */
+        color: white;         /* Change to white text color on hover */
+      }
+            .footer {
+              text-align: center;
+              font-size: 13px;
+            }
+    </style>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="container">
+      <h1>Let's learn with LXC!</h1>
+      <h2>Discover how tech makes learning fun, and flexible! 🚀</h2>
+      <hr>
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/164/718/original/Online_learning-amico.png?1746301632" alt="EdTech image">
+      <hr>
+      <p>
+        Whether you're into videos, reading, or hands-on tools, there's
+        something for everyone. At LabXchange, where I work as an Instructional
+        Technologist, we make learning accessible to all, offering high-quality
+        STEM content in multiple languages. We empower learners through
+        interactive, inclusive resources, collaborating with diverse educators
+        to support exploration and creativity.
+      </p>
+      <p>
+        <a href="https://www.labxchange.org" target="_blank" style="color: #a678f4; font-size: 15px; text-decoration: underline">
+          Discover your learning vibe at LXC!
+        </a>
+      </p>
+      <button class="labxchange-button">Checkout LabXchange! 📚💻</button>
+      <p class="footer">This page was built by Inga Sokomani</p>
+    </div>
+    <script>
+      function checkOut() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email address?");
+        let emoji = prompt("What's your favorite emoji for learning today?");
+
+        alert(
+          "Thanks for exploring EdTech with us, " +
+            name +
+            "! We'll be in touch via " +
+            email +
+            ". Keep learning with LabXchange " +
+            emoji
+        );
+      }
+
+      let labxchangeButton = document.querySelector(".labxchange-button");
+      labxchangeButton.addEventListener("click", checkOut);
+    </script>
+  
+</body></html>
