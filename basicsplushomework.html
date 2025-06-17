@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hiking Hobby</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #fff);
+      color: #333;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .dark {
+      background: #1e1e1e;
+      color: #eee;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .dark .card {
+      background: #333;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      padding: 0 10px 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="toggleTheme()">Switch Theme</button>
+
+  <header>
+    <h1>Hiking Adventures</h1>
+    <p>Nature. Freedom. Joy.</p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587412328528-faa99d71e66c?w=800" alt="Mountains" />
+      <h3>Mountains</h3>
+      <p>Challenging hikes with great views.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1692357011437-027e7536044c?w=800" alt="Forest Trail" />
+      <h3>Forest Trails</h3>
+      <p>Peaceful and shaded nature paths.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1623965405512-09ebd0234872?w=800" alt="Riverside" />
+      <h3>Riverside</h3>
+      <p>Relaxing walks by the water.</p>
+    </div>
+  </section>
+
+  <footer>Built by Inga Sokomani</footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
