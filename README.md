@@ -3,9 +3,13 @@ This repository contains my homework and projects from SheCodes.
 
 ## 📁 Projects Overview
 
-### 🌐 Week 1: HTML & CSS Basics  
+### 🌐 HTML,CSS + JavaScript Basics 
 **Status**: Completed  
-A simple responsive landing page using HTML and CSS.
+A simple responsive landing page.
+
+### 🌐 HTML,CSS + JavaScript Basics 
+**Status**: Completed
+A landing page about one of my hobbies.
 
 ### ☁️ JavaScript Weather App  
 **Status**: Ongoing (uploading soon)  
